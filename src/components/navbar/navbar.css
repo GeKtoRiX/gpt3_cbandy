@@ -1,0 +1,74 @@
+.gpt3__navbar {
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 6rem;
+}
+
+.gpt3__navbar-links {
+    /* border: 1px solid yellow; */
+    color: white;
+    display: flex;
+    /* The flex CSS shorthand property sets how a flex item will grow or shrink to fit the space available in its flex container. */
+    flex: 1;
+    justify-content: start;
+    align-items: center;
+}
+
+.gpt3__navbar-links_logo {
+    /* border: 1px solid orange; */
+    margin-right: 2rem;
+    padding: 1rem;
+}
+
+.gpt3__navbar-links_logo img {
+    width: 62.56px;
+    height: 16.02px;
+}
+
+.gpt3__navbar-links_container {
+    display: flex;
+    flex-direction: row;
+}
+
+.gpt3__navbar-sign {
+    /* border: 1px solid yellow; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gpt3__navbar-sign p {
+    margin: 0 1.5rem;
+}
+
+.gpt3__navbar-links_container p,
+.gpt3__navbar-sign,
+.gpt3__navbar_menu_container p {
+    /* border: 1px solid orange; */
+    color: #ffffff;
+    margin: 1rem 2rem;
+    font-family: var(--font-hamily);
+    font-style: normal;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24.59px;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.gpt3__navbar-sign button,
+.gpt3__navbar_menu_container button {
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    color: #ffffff;
+    padding: 1.05rem 2.8rem;
+    font-family: var(--font-hamily);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    background: #ff4820;
+    cursor: pointer;
+}
