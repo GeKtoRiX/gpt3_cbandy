@@ -2,10 +2,12 @@ import React from 'react';
 
 import { Footer, Blog, Possibility, Features, WhatGPT3, Header, } from './containers';
 import { CTA, Brand, Navbar } from './components';
+import './App.css';
 
 function App() {
   return (
     <div className='App'>
+      {/* Верхняя часть сайта с панелью навигации. */}
       <div className='gradient__bg'>
         <Navbar />
         <Header />

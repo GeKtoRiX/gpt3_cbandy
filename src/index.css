@@ -1,13 +1,21 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+/* Главный шрифт на сайте. */
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Общие переменные корневого доступа */
+:root {
+  /* Импортированный шрифт. */
+  --font-hamily: "Manrope", sans-serif;
+  /* Линейные градиенты текса/полос */
+  --gradient-text: linear-gradient(89.97deg, #ae67fa 1.84%, #f49867 102.67%);
+  --gradient-bar: linear-gradient(103.22deg, #ae67fa -13.86%, #f49867 99.55%);
+  /* Общий цвет заднего фона блока body. */
+  --color-bg: #040c18;
+  /* Цвет блока footer. */
+  --color-footer: #031b34;
+  /* Цвет блока blog. */
+  --color-blog: #042c54;
+  /* Общий цвет текста сайта. */
+  --color-text: #81afdd;
+  /* Общий цвет вложенностей сайта. */
+  --color-subtext: #ff8a71;
 }
