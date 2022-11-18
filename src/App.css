@@ -84,61 +84,31 @@ a {
     margin: 4rem 6rem;
 }
 
-/* Анимация с увеличением элемента. */
-.scale-down-center {
-    -webkit-animation: scale-down-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-    animation: scale-down-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+.scale-up-center {
+    -webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
 
-/* Свойства анимации увеличения элемента. */
-@-webkit-keyframes scale-down-center {
+@-webkit-keyframes scale-up-center {
     0% {
-        -webkit-transform: scale(1);
-        transform: scale(1);
-    }
-
-    100% {
         -webkit-transform: scale(0.5);
         transform: scale(0.5);
     }
-}
 
-@keyframes scale-down-center {
-    0% {
+    100% {
         -webkit-transform: scale(1);
         transform: scale(1);
     }
+}
 
-    100% {
+@keyframes scale-up-center {
+    0% {
         -webkit-transform: scale(0.5);
         transform: scale(0.5);
     }
-}
 
-/* Медиа запрос среднего экрана.*/
-@media screen and (max-width:700px) {
-
-    /* Перезаппись внутренних отступов для средних экранов. */
-    .section__padding {
-        padding: 4rem;
-    }
-
-    /* Перезаппись внешних отступов для средних экранов. */
-    .section__margin {
-        padding: 4rem;
-    }
-}
-
-/* Медиа запрос мобильного экрана.*/
-@media screen and (max-width:550px) {
-
-    /* Перезаппись внутренних отступов для средних экранов. */
-    .section__padding {
-        padding: 4rem 2rem;
-    }
-
-    /* Перезаппись внешних отступов для мобильных экранов. */
-    .section__margin {
-        padding: 4rem 2rem;
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
     }
 }
