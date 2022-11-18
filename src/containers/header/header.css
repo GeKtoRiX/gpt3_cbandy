@@ -1,0 +1,199 @@
+.gpt3__header {
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: row;
+}
+
+/* Содержимое header. */
+.gpt3__header-content {
+    /* border: 1px solid yellow; */
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: center;
+    align-items: flex-start;
+    margin-right: 5rem;
+}
+
+.gpt3__header-content h1 {
+    /* border: 1px solid yellow; */
+    font-family: var(--font-family);
+    font-size: 62px;
+    font-weight: 800;
+    line-height: 75px;
+    font-style: normal;
+    letter-spacing: -0.04em;
+}
+
+.gpt3__header-content p {
+    /* border: 1px solid orange; */
+    margin-top: 2rem;
+    color: var(--color-text);
+    font-family: var(--font-family);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 27px;
+    font-style: normal;
+}
+
+.gp3__header-content__input {
+    /* border: 1px solid red; */
+    width: 100%;
+    /* Верх/0/Низ */
+    margin: 2rem 0 1rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.gp3__header-content__input input {
+    /* border: 1px solid yellow; */
+    color: #ffffff;
+    flex: 2;
+    width: 100%;
+    min-height: 50px;
+    outline: none;
+    border: none;
+    border: 2px solid var(--color-footer);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding: 0 1rem;
+    font-family: var(--font-family);
+    font-size: 20px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 27px;
+    background: var(--color-footer);
+}
+
+.gp3__header-content__input button {
+    /* border: 1px solid yellow; */
+    color: #ffffff;
+    flex: 0.6;
+    width: 100%;
+    min-height: 50px;
+    outline: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 0 1rem;
+    font-family: var(--font-family);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 27px;
+    font-style: normal;
+    background: #ff4820;
+    cursor: pointer;
+}
+
+.gp3__header-content__people {
+    /* border: 1px solid yellow; */
+    width: 100%;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.gp3__header-content__people img {
+    /* border: 1px solid yellow; */
+    width: 181.79px;
+    height: 38px;
+}
+
+.gp3__header-content__people p {
+    color: #ffffff;
+    margin: 0 0 0 1rem;
+    text-align: center;
+    font-family: var(--font-family);
+    font-size: 12px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 38px;
+}
+
+/* Изображение header. */
+.gpt3__header-image {
+    /* border: 1px solid yellow; */
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.gpt3__header-image img {
+    width: 100%;
+    height: 100%;
+}
+
+/* ======[Реализация разной ширины экранов]======*/
+@media screen and (max-width: 1050px) {
+    .gpt3__header {
+        flex-direction: column;
+    }
+
+    .gpt3__header-content {
+        margin: 0 0 3rem;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .gpt3__header.section__padding {
+        padding: 1rem 1rem;
+    }
+
+    .gpt3__header h1 {
+        font-size: 47px;
+        line-height: 60px;
+    }
+
+    .gpt3__header p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .gp3__header-content__input input,
+    .gp3__header-content__input button {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .gp3__header-content__people {
+        flex-direction: column;
+    }
+
+    .gp3__header-content__people p {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .gpt3__header h1 {
+        font-size: 32px;
+        line-height: 48px;
+    }
+
+    .gpt3__header p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .gp3__header-content__input input,
+    .gp3__header-content__input button {
+        font-size: 12px;
+        line-height: 16px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .gpt3__header.section__padding {
+        padding: 1rem 1rem;
+    }
+
+    .gpt3__header h1 {
+        font-size: 20px;
+        line-height: 32px;
+    }
+
+    .gp3__header-content__people p {
+        font-size: 15px;
+    }
+}
