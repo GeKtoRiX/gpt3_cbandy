@@ -1,0 +1,105 @@
+@use "../../index.scss" as *;
+
+.gpt3__features {
+    width: 100%;
+    padding: 4rem 6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    background: $color-bg;
+    &-heading {
+        // border: 1px solid red;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        text-align: left;
+        h1 {
+            margin-bottom: 2rem;
+            font-family: $font-family;
+            font-size: 34px;
+            font-weight: 800;
+            font-style: normal;
+            line-height: 45px;
+        }
+        p {
+            color: $color-subtext;
+            font-family: $font-family;
+            font-size: 16px;
+            font-weight: 500;
+            font-style: normal;
+            line-height: 30px;
+            cursor: pointer;
+        }
+    }
+    &-container {
+        flex: 3;
+        // border: 1px solid red;
+        .gpt3__features-container__feature {
+            justify-content: space-around;
+            align-items: flex-start;
+            margin-bottom: 2.5rem;
+            &-title {
+                div {
+                }
+                h1 {
+                }
+            }
+
+            &-text {
+                p {
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 1025px) {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        &-heading {
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            h1 {
+                font-size: 28px;
+                line-height: 49px;
+            }
+            p {
+                margin-bottom: 3rem;
+            }
+        }
+
+        &-container {
+            .gpt3__features-container__feature {
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+
+    @media screen and (max-width: 550px) {
+        padding: 1rem 3rem;
+        &-heading {
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+            h1 {
+                font-size: 28px;
+                line-height: 38px;
+            }
+
+            p {
+            }
+        }
+
+        &-container {
+            .gpt3__features-container__feature {
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+}

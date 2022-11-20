@@ -1,0 +1,153 @@
+@use "../../index.scss" as *;
+
+// Блок описания проекта.
+.gpt3__whatgpt3 {
+    margin: 2rem 3rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+
+    background: -moz-radial-gradient(
+        circle at 30% -100%,
+        #042c54 25%,
+        rgba(4, 44, 84, 1) 85%,
+        rgba(27, 120, 222, 1) 100%
+    );
+
+    background: -webkit-radial-gradient(
+        circle at 30% -100%,
+        #042c54 25%,
+        rgba(4, 44, 84, 1) 85%,
+        rgba(27, 120, 222, 1) 100%
+    );
+
+    background: -o-radial-gradient(
+        circle at 30% -100%,
+        #042c54 25%,
+        rgba(4, 44, 84, 1) 85%,
+        rgba(27, 120, 222, 1) 100%
+    );
+
+    background: -ms-radial-gradient(
+        circle at 30% -100%,
+        #042c54 25%,
+        rgba(4, 44, 84, 1) 85%,
+        rgba(27, 120, 222, 1) 100%
+    );
+
+    background: radial-gradient(circle at 30% -100%, #042c54 25%, rgba(4, 44, 84, 1) 85%, rgba(27, 120, 222, 1) 100%);
+
+    // Одиночный элемент описания проекта.
+    &-feature {
+        display: flex;
+    }
+    // Главное описание проекта.
+    &-heading {
+        margin: 4rem 0 2rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        h1 {
+            max-width: 510px;
+            font-family: $font-family;
+            font-style: normal;
+            font-weight: 800;
+            font-size: 34px;
+            line-height: 45px;
+        }
+        p {
+            color: $color-subtext;
+            font-family: $font-family;
+            font-size: 16px;
+            font-weight: 500;
+            font-style: normal;
+            line-height: 30px;
+            cursor: pointer;
+        }
+    }
+    // Группа элементов описания проекта.
+    &-container {
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    // Элемент с одним вложенным Feature.
+    &-feature {
+        .gpt3__features-container {
+            &__feature {
+                margin: 0;
+
+                &-text {
+                    max-width: 700px;
+                }
+            }
+        }
+    }
+    // Элемент со множенством вложенных Feature.
+    &-container {
+        .gpt3__features-container {
+            &__feature {
+                flex: 1;
+                min-width: 210px;
+                margin: 1rem;
+                display: unset;
+                flex-direction: column;
+
+                &-text {
+                    margin-top: 0.5rem;
+                }
+            }
+        }
+    }
+    // Подгонка элементов под разные разрешения экрана.
+    @media screen and (max-width: 850px) {
+        &-heading {
+            flex-direction: column;
+            align-items: flex-start;
+            margin-bottom: 0rem;
+
+            p {
+                margin-top: 1rem;
+            }
+        }
+    }
+
+    @media screen and (max-width: 650px) {
+        /* Customizing feature component as per needs */
+        &-feature .gpt3__features-container__feature {
+            flex-direction: column;
+        }
+
+        /* Customizing feature component as per needs */
+        &-feature .gpt3__features-container_feature-text {
+            margin-top: 0.5rem;
+        }
+
+        &-heading {
+            h1 {
+                font-size: 28px;
+                line-height: 40px;
+            }
+        }
+    }
+
+    @media screen and (max-width: 350px) {
+
+        &-heading{
+            h1{
+                font-size: 20px;
+                line-height: 29px;
+            }
+            p{
+                font-size: 13px;
+            }
+        }
+
+        &-container .gpt3__features-container__feature {
+            margin: 1rem 0;
+            min-width: 100%;
+        }
+    }
+}
